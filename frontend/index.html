@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desfruta - Gerenciador de Estoque</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Tela de Login -->
+  <div id="loginPage" class="login-container">
+    <div class="login-box">
+      <div class="login-logo">
+        <i class="fas fa-apple-alt"></i>
+        <h2>Desfruta</h2>
+      </div>
+      <div class="login-form">
+        <input type="text" id="username" placeholder="Usuário">
+        <input type="password" id="password" placeholder="Senha">
+        <button class="login-btn" onclick="login()">Entrar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sistema Principal -->
+  <div id="app" class="hidden">
+    <header>
+      <div class="logo">
+        <i class="fas fa-apple-alt"></i>
+        <span>Desfruta</span>
+      </div>
+      <div class="user-info">
+        <span id="currentUser">Usuário</span>
+        <button class="logout-btn" onclick="logout()">
+          <i class="fas fa-sign-out-alt"></i>
+        </button>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="search-bar">
+        <input type="text" placeholder="Buscar sabor..." id="searchInput">
+        <i class="fas fa-search"></i>
+      </div>
+
+      <div class="sabores-lista" id="saboresLista">
+        <!-- Os sabores serão inseridos aqui via JavaScript -->
+      </div>
+
+      <div class="total-geral">
+        <div class="total-item total-0_5">
+          <div class="total-label">Total 0.5kg</div>
+          <div class="total-valor" id="total-0_5">0</div>
+        </div>
+        <div class="total-item total-1">
+          <div class="total-label">Total 1kg</div>
+          <div class="total-valor" id="total-1">0</div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      Gerenciador de Estoque © 2025
+    </footer>
+
+    <div class="notification" id="notification">
+      <i class="fas fa-info-circle"></i>
+      <span id="notificationText"></span>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>
