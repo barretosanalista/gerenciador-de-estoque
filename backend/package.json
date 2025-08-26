@@ -1,7 +1,6 @@
 {
   "dependencies": {
     "express": "^5.1.0",
-    "mysql2": "^3.14.3",
-    "@ljharb/tsconfig": "^2.0.0"
-  }
+    "mysql2": "^3.14.3"
+    }
 }

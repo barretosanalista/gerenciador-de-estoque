@@ -1,0 +1,14 @@
+Depois que você apagar a linha "@ljharb/tsconfig": "^2.0.0" do package.json, faça um commit no GitHub para que a mudança seja registrada no repositório remoto.
+
+Para garantir que tudo esteja correto, abra o terminal no VSCode na pasta backend e rode o comando:
+
+yarn install
+
+
+Depois disso, faça o commit e push normalmente:
+
+git add package.json yarn.lock
+git commit -m "Remove tsconfig para corrigir erro de deploy"
+git push
+
+Daí, no Render, você pode tentar fazer o deploy de novo e deve funcionar.
